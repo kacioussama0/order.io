@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+  <style>
+    * {
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    body  {
+      background-image: url("images/pattern-background-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: hsl(225, 100%, 94%);
+    }
+    div.parent {
+      width: 400px;
+      height: 600px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: #fff;
+      transform: translate(-50%,-50%);
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+    #illustration {
+      display: block;
+      border-radius: 15Px 15px 0 0;
+    }
+    h1 {
+      text-align: center;
+      font-size: 25px;
+      margin-top: 50px;
+    }
+    p {
+      text-align: center;
+      margin: 5px 25px;
+      font-size: 16px;
+      color: hsl(224, 23%, 55%);
+    }
+    .plan {
+      display: flex;
+      width: 80%;
+      height: 80px;
+      background-color: #eee;
+      margin: 15px auto;
+      border-radius: 5px;
+      
+      align-items: center;
+    }
+    #music {
+      width: 50px;
+      height: 50px;
+      margin: 15px;
+    }
+    .price {
+      display: flex;
+      flex-direction: column;
+     
+    }
+    .price h4 {
+      margin: 2px 0;
+    }
+    .price p {
+        margin : 0;
+    }
+    a {
+      margin-right: 25px;
+      margin-left: auto;
+    }
+    .process,.cancel {
+      width: 80%;
+      height: 40px;
+      margin: 5px auto;
+      display: flex;
+      background-color: hsl(245, 75%, 52%);
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .process {
+      box-shadow: 0 2px 7px 0 hsl(245, 75%, 52%);
+    }
+    .process:hover {
+      background-color:   hsl(255, 75%, 52%);;
+    }
+    .cancel {
+      background-color: #fff;
+      color: hsl(224, 23%, 55%);
+      
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+      div.parent {
+        width: 350px;
+      }
+} 
+  </style>
+ 
+</head>
+<body>
+  <div class="parent">
+      <img src="images/illustration-hero.svg" alt="" id="illustration">
+      <h1>Order Summary</h1>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p>
+      <span class="plan">
+        <img src="images/icon-music.svg" alt="" id="music"/>
+        <span class="price">
+          <h4>Annual Plan</h4>
+          <p>$59.99/year</p>
+        </span>
+        <a href="#">Change</a>
+      </span>
+      <span class="process">Proceed to Payment</span>
+      <span class="cancel">Cancel Order</span>
+
+
+
+
+
+
+
+  </div>
+  <!-- 
+
+  
+
+  Annual Plan
+  $59.99/year
+
+  Change
+
+  Proceed to Payment
+  Cancel Order -->
+  
+
+  </div>
+</body>
+</html>
